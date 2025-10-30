@@ -47,7 +47,7 @@ It demonstrates component-based architecture, state management with hooks, theme
 ---
 
 ## Project Structure
-
+---
 CarbonTrack/
 │
 ├── src/
@@ -79,7 +79,6 @@ CarbonTrack/
 ├── tailwind.config.js
 └── vite.config.js
 
-
 ---
 
 ##  How It Works
@@ -106,7 +105,7 @@ npm run build
 4️⃣ Preview Build
 npm run preview
 
-🌐 Deployment
+ Deployment
 
 Deployed using Netlify ✅
 🔗 Live Demo: https://carbontrackk.netlify.app/
@@ -123,12 +122,12 @@ React Router DOM
 
 JSONPlaceholder API
 
-👨‍💻 Author
+ Author
 
 Samuel Ojima Idakwo
 Process Engineer | MERN Developer
-🚀 Passionate about sustainability and carbon management
+ Passionate about sustainability and carbon management
 
-📜 License
+ License
 
 This project is licensed under the MIT License.
