@@ -1,70 +1,134 @@
-# React.js and Tailwind CSS Assignment
+#  CarbonTrack
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive React application built with **Vite**, **Tailwind CSS**, and **React Router**.  
+It demonstrates component-based architecture, state management with hooks, theme toggling (light/dark mode), and API integration with loading/error handling.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## Project Overview
 
-## Getting Started
+**CarbonTrack** is designed to showcase modern front-end development practices in React:
+- Component reusability and props management
+- State management with React Hooks (`useState`, `useEffect`, `useContext`)
+- Custom hook (`useLocalStorage`) for data persistence
+- API integration (JSONPlaceholder)
+- Responsive design with Tailwind CSS
+- Theme switching between light and dark modes
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+---
 
-## Files Included
+##  Features
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+###  Component Architecture
+- **Navbar** – site navigation and theme toggle  
+- **Footer** – copyright and links  
+- **Button** – reusable button component with variants (Primary, Secondary, Danger)  
+- **Card** – displays API data and custom content  
+- **Layout** – wraps all pages with Navbar and Footer  
+- **TaskManager** – add, delete, and filter tasks with local persistence  
 
-## Requirements
+###  State Management & Hooks
+- `useState` – manage tasks, filters, and API data  
+- `useEffect` – fetch posts and load saved tasks  
+- `useContext` – manage light/dark theme  
+- `useLocalStorage` – persist user tasks and theme preference  
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+###  API Integration
+- Fetches posts from `https://jsonplaceholder.typicode.com/posts`
+- Displays fetched data in a responsive grid
+- Handles loading and error states gracefully
+- Supports search and pagination (if added)
+
+###  Styling with Tailwind CSS
+- Fully responsive (mobile, tablet, desktop)
+- Dark mode using Tailwind’s `dark:` classes
+- Clean UI with spacing, hover effects, and transitions
+
+---
 
 ## Project Structure
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+CarbonTrack/
+│
+├── src/
+│ ├── components/
+│ │ ├── Button.jsx
+│ │ ├── Card.jsx
+│ │ ├── Navbar.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Layout.jsx
+│ │ └── TaskManager.jsx
+│ │
+│ ├── context/
+│ │ └── ThemeContext.jsx
+│ │
+│ ├── hooks/
+│ │ └── useLocalStorage.js
+│ │
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── Posts.jsx
+│ │
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── index.css
+│ └── tailwind.css
+│
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.js
 
-## Submission
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+##  How It Works
 
-## Resources
+1. The app starts with **light theme** (default) but remembers your preference.  
+2. The **Navbar** has a theme toggle switch for light/dark mode.  
+3. The **TaskManager** component lets users add and manage tasks saved in localStorage.  
+4. The **PostsPage** fetches posts from the JSONPlaceholder API and displays them in cards.  
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+---
+
+##  Setup Instructions
+
+### 1️⃣ Install Dependencies
+```bash
+npm install
+
+2️⃣ Run Development Server
+npm run dev
+
+3️⃣ Build for Production
+npm run build
+
+4️⃣ Preview Build
+npm run preview
+
+🌐 Deployment
+
+Deployed using Netlify ✅
+🔗 Live Demo: https://carbontrackk.netlify.app/
+
+Technologies Used
+
+React 18
+
+Vite
+
+Tailwind CSS 3
+
+React Router DOM
+
+JSONPlaceholder API
+
+👨‍💻 Author
+
+Samuel Ojima Idakwo
+Process Engineer | MERN Developer
+🚀 Passionate about sustainability and carbon management
+
+📜 License
+
+This project is licensed under the MIT License.
